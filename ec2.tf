@@ -4,7 +4,7 @@ provider "aws" {
 resource "aws_instance" "infra" {
     ami           = "ami-02384a901b5df8024" 
     instance_type = "t3.micro"
-    security_groups = ["jkSG"]
+    security_groups = ["launch-wizard-1"]
     key_name      =  "pem-cer-KeyFile"
     tags = {
         Name = " tomcat"
